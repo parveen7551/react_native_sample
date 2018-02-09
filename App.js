@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, TextInput, Text, View, Image} from 'react-native';
+import ButtonExample from './Components/Button'
 
 
 class TextExample extends Component {
@@ -60,11 +61,10 @@ export default class BlinkApp extends Component {
     render() {
       return (
         <View style={{alignItems: 'center', marginTop:100}}>
-          <Blink name='Parveen'/>
-          <Blink name='Kumar'/>
-          <Blink name='Mister'/>
 
             <TextExample />
+            <ButtonExample />
+            <Blink name="parveen" />
         </View>
       )
    }
